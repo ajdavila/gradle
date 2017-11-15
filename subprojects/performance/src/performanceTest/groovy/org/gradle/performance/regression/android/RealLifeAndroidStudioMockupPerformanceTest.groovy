@@ -31,6 +31,7 @@ class RealLifeAndroidStudioMockupPerformanceTest extends AbstractAndroidStudioMo
             action('org.gradle.performance.android.SyncAction') {
                 jvmArguments = customizeJvmOptions(["-Xms2g", "-Xmx2g"])
                 withArguments("android.builder.sdkDownload=true", "-Dcom.android.build.gradle.overrideVersionCheck=true")
+                forTasks("generateDebugSources")
             }
         }
 
