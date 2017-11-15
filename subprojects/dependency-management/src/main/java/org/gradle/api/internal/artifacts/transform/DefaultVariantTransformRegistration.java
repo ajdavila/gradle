@@ -89,4 +89,9 @@ class DefaultVariantTransformRegistration implements VariantTransformRegistry.Re
             throw new ArtifactTransformException(input, to, implementation, t);
         }
     }
+
+    @Override
+    public String toString() {
+        return implementation.getName();
+    }
 }

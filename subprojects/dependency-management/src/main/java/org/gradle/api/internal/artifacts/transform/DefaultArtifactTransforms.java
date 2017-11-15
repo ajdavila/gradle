@@ -234,7 +234,7 @@ public class DefaultArtifactTransforms implements ArtifactTransforms {
 
         @Override
         public BuildOperationDescriptor.Builder description() {
-           return BuildOperationDescriptor.displayName("Apply " + transform + " to " + artifact);
+            return BuildOperationDescriptor.displayName("Apply " + transform + " to " + artifact);
         }
     }
 

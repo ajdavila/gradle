@@ -87,6 +87,11 @@ public class VariantAttributeMatchingCache {
                         }
                         return result;
                     }
+
+                    @Override
+                    public String toString() {
+                        return inputVariant.transformer + " -> " + candidate.getArtifactTransform();
+                    }
                 };
                 result.matched(variantAttributes, transformer, inputVariant.depth + 1);
             }
